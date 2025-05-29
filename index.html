@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aprezio</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <style>
+    .main-layout {
+      display: flex;
+      gap: 20px;
+    }
+
+    .sidebar {
+      flex: 1.5; 
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      flex: 2; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .big-image {
+      width: 90%; 
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .main-layout {
+        flex-direction: column;
+      }
+
+      .image-container {
+        flex: 1;
+      }
+
+      .big-image {
+        width: 100%; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">Aprezio</h1>
+      <input class="search-input" placeholder="¿Qué buscas?" />
+    </header>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <h2 class="sidebar-title">Categorías</h2>
+        <ul class="category-list">
+          <li class="dropdown">
+            <a href="#" class="category-link">Nuestras Marcas</a>
+            <ul class="dropdown-menu">
+              <li><a href="productoswala.html" class="dropdown-item">Wala</a></li>
+              <li><a href="productoszerca.html" class="dropdown-item">Zerca</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="category-link">Alimentación</a>
+            <ul class="dropdown-menu">
+              <li><a href="carnes.html" class="dropdown-item">Carnes</a></li>
+              <li><a href="Alimentoscongelados.html" class="dropdown-item">Congelados</a></li>
+              <li><a href="Mariscos.html" class="dropdown-item">Mariscos</a></li>
+              <li><a href="Lacteos.html" class="dropdown-item">Lácteos</a></li>
+              <li><a href="Galletas.html" class="dropdown-item">Galletas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="category-link">Frutas y Vegetales</a>
+            <ul class="dropdown-menu">
+              <li><a href="Frutasfrescas.html" class="dropdown-item">Frutas frescas</a></li>
+              <li><a href="Hierbasyespecias.html" class="dropdown-item">Hierbas y especias</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="category-link">Nosotros</a>
+            <ul class="dropdown-menu">
+              <li><a href="historia.html" class="dropdown-item">Historia</a></li>
+              <li><a href="mision.html" class="dropdown-item">Misión</a></li>
+              <li><a href="vision.html" class="dropdown-item">Visión</a></li>
+              <li><a href="valores.html" class="dropdown-item">Valores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="formulario.html" class="category-link">Contacto</a>
+          </li>
+        </ul>
+        <a href="https://www.google.com/maps/search/Aprezio+cerca+de+mi/" target="_blank" class="btn-ubicacion">
+          Buscar Aprezio más cercano
+        </a>
+      </aside>
+
+      <div class="image-container">
+        <img src="Aprezio.pueblo villa.jpg" alt="Imagen destacada" class="big-image">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="location">
+        <h3>Ubicación de nuestra tienda</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.4196123804734!2d-69.8777254!3d18.4838163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf886c78f976b3%3A0x9a418f206ce1da56!2sAprezio%20Pueblo%20Nuevo%20ANGEL%20MARIA%20IGLESIA!5e0!3m2!1ses!2sdo!4v1716151745211!5m2!1ses!2sdo"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p><a href="https://www.google.com/maps/place/Aprezio+Pueblo+Nuevo+ANGEL+MARIA+IGLESIA/" target="_blank">Ver en Google Maps</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
